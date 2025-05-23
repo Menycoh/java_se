@@ -1,7 +1,10 @@
 package day_02;
 
 import java.util.Scanner;
-
+/* Calcolo dell'area di un rettangolo
+ * Traccia: Scrivi un programma Java che chieda all'utente di inserire la base
+ *  e l'altezza di un rettangolo e stampi l'area corrispondente.*/
+ 
 public class area_rettangolo {
 
 	public static void main(String[] args) {

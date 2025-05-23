@@ -1,7 +1,10 @@
 package day_02;
 
 import java.util.Scanner;
-
+/*Somma di due numeri
+ * Traccia: Scrivi un programma Java che chieda all'utente
+ *  di inserire duenumeri interi e stampi la loro somma.*/
+ 
 public class sommanumeri {
 
 	public static void main(String[] args) {
