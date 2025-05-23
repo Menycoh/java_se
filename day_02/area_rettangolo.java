@@ -8,9 +8,9 @@ public class area_rettangolo {
 		double base, altezza, area;
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("Inserisci la lunghezza del rettangolo: ");
+		System.out.println("Inserisci la base del rettangolo: ");
 		base = input.nextDouble();
-		System.out.println("Inserisci la larghezza del rettangolo: ");
+		System.out.println("Inserisci la altezza del rettangolo: ");
 		altezza = input.nextDouble();
 
 		area = base * altezza;
