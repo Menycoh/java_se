@@ -11,8 +11,8 @@ public class TipiNumerici {
 		long numeroLong = numeroInt; // 00000000 00000000 00000000 00000000 01111010 (64 Bit)
 		float numeroFloat = numeroLong; // Sempre 32 bit
 		double numeroDouble = numeroFloat; // 64 Bit
-		System.out.println("numeroDouble: "+ numeroDouble);
-	
+		System.out.println("numeroDouble: " + numeroDouble);
+
 	}
 
 }

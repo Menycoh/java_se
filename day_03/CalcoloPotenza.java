@@ -2,18 +2,19 @@ package day_03;
 
 import java.util.Scanner;
 
-public class ParioDispari {
+public class CalcoloPotenza {
 
 	public static void main(String[] args) {
-		int a;
-
 		Scanner input = new Scanner(System.in);
 		System.out.println("Inserisci il numero: ");
-		a = input.nextInt();
+		double a = input.nextDouble();
+		double b = input.nextDouble();
 
-		String[] messaggi = { "Il numero è pari.", "Il numero è dispari." };
-		System.out.println(messaggi[Math.abs(a % 2)]);
+		a = Math.pow(a, b);
 
+		System.out.println("Il risultato è: " + a);
+
+		input.close();
 	}
 
 }
