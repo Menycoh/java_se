@@ -19,7 +19,13 @@ public class Matrice {
 				matrice [i][j] = input.nextInt();
 			}
 		}
-		
+		System.out.println("Gli elementi inseriti nella matrice sono: ");
+		for(int i = 0; i < righe; i++) {
+			for(int j = 0; j< colonne; j++) {
+				System.out.print(matrice[i][j] + " ");	
+			}
+			System.out.println();
+		}
 		input.close();
 	}
 

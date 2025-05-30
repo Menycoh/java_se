@@ -4,26 +4,40 @@ import java.util.Scanner;
 
 public class CongetturaCollatz {
 
-	public static int collatzSteps(int n) {
-		int steps = 0;
-		
+	public static int collatz(int n) {
+		int passi = 0;
+
 		while (n != 1) {
-			if(n%2== 0) {
-				n = n/2;
-			}else {
-				n = 3 *n+1;
+			if (n % 2 == 0) {
+				n = n / 2;
+				System.out.println(n);
+				passi++;
+
+			} else {
+				n = 3 * n + 1;
+				System.out.println(n);
+				passi++;
+
 			}
-			System.out.println(n);
-			steps++;
-			
+
 		}
-		return steps;
+
+		return passi;
 	}
-	public static void main (String [] args) {
-		Scanner input = new Scanner (System.in);
-		System.out.println("Inserisci un numero: ");
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Inserisci un numero da cui partire: ");
 		int n = input.nextInt();
-		int result = collatzSteps(n);
-		System.out.println("Numero di passi per arrivare a 1 partendo da " + n + ": " + result);
+
+		if (n <= 0) {
+			System.out.println("Inserisci un numero maggiore di 0. ");
+			input.close();
+			return;
+		}
+		int passi = collatz(n);
+		System.out.println("I passi necessari per arrivare a 1 sono: " + passi + " passi");
+
+		input.close();
 	}
 }
